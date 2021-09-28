@@ -1,4 +1,5 @@
 import CardList from "./CardList";
+import { ErrorBoundary } from "./ErrorBoundary";
 import "./style.css";
 
 const items = [
@@ -13,6 +14,20 @@ const items = [
   },
 ];
 
+function getItems() {
+  return Math.random() > 0.5 ? items : null;
+}
+
 export const App = () => {
-  return <CardList items={items} size="large" />;
+  return (
+    <ErrorBoundary>
+      {(error, retry) =>
+        error ? (
+          <button onClick={retry}>Retry</button>
+        ) : (
+          <CardList items={getItems()} size="large" />
+        )
+      }
+    </ErrorBoundary>
+  );
 };
