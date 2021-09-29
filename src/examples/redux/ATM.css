@@ -1,0 +1,28 @@
+body {
+  padding: 1rem;
+  text-align: center;
+}
+
+.ATM {
+  display: inline-block;
+}
+
+p {
+  border: 1px solid #4ea4be;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 20px;
+  color: #4ea4be;
+  font-weight: bold;
+}
+
+button {
+  height: 4rem;
+  width: 120px;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

@@ -8,11 +8,11 @@ import reportWebVitals from "./reportWebVitals";
 // ...
 // Uncomment an example to run it.
 // import { App } from './driver';
-import { App } from "./feed";
+// import { App } from "./feed";
 // import { App } from "./todo";
 // import { App } from './useEffect';
 // import { App } from './dependencyContext';
-// import { App } from './auth';
+import { App } from "./auth";
 // import { App } from './reduxCounter';
 // import { App } from './authRedux';
 
